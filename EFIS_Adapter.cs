@@ -4,7 +4,7 @@
 * Most of the adpater code should be re-usable in the EADI as well as
 * the Symbol Generator systems.
 *
-* Gem Immanuel (gemify@simavionics.demo)
+* Gem Immanuel (gemify@simvionics.notreal)
 */
 using System.Linq;
 using System.Web.Mvc;
