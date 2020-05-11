@@ -22,6 +22,7 @@ namespace avSim.Controllers
 
         protected EFISService efisService;
         protected AirframeDataService airframeDataService;
+        protected AutoPilotDataService apDataService;
         protected CategoryService categoryService;
         protected SimSecurityService simSecurityService;
         public ServiceFactory serviceFactory = ServiceFactory.NewInstance();
@@ -40,6 +41,7 @@ namespace avSim.Controllers
             this.categoryService = serviceFactory.getCategoryService();
             this.airframeDataService = serviceFactory.getAirframeDataService();
             this.simSecurityService = serviceFactory.getSimSecurityService();
+            this.apDataService = serviceFactory.getAutoPilotDataService();
 
         }
 
@@ -193,7 +195,7 @@ namespace avSim.Controllers
             }
 
             // Split out the AP system data as well
-            APSystem apSys = efisService.readAPData(categoryId);
+            APSystem apSys = apDataService.readAPData(categoryId);
 
             // Extract/transform the data required for the PFD
             // TODO: For LNAV, make sure to read Vertical Guidance data
