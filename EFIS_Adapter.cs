@@ -67,7 +67,7 @@ namespace avSim.Controllers
             // Implement transformation of the following items:
             // - Turn Coordinator
             // - Horizontal Situation Indicator
-            // - Attitude Directory Indicator
+            // - Attitude Direction Indicator
             // Remember to scale for the readouts appropriately.
 
             // Use the SimSecurityService to sanitize the sensorKey 
