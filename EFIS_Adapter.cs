@@ -78,7 +78,7 @@ namespace avSim.Controllers
             ViewData.sensorKey = sanitizedSenorKey;
             ViewData.EFISAdapter = efisModel;
 
-            return View("EFISAdapter", efisModel);
+            return View();
 
         }
 
