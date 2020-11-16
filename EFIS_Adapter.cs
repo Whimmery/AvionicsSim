@@ -3,6 +3,7 @@
 * The adapter enables integration with the PDS (Pilot Display System).
 * Most of the adpater code should be re-usable in the EADI as well as
 * the Symbol Generator systems.
+* CxFlow Demonstration
 *
 * Gem Immanuel (gemify@simvionics.notreal)
 */
